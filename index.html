@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual do Git</title>
+</head>
+
+<body>
+    <h1>Manual do Git</h1>
+
+    <h2>O que é o GIT</h2>
+    <p>O Git é um projeto de código aberto maduro e com manutenção ativa desenvolvido em 2005 por Linus Torvalds, o
+        famoso criador do kernel do sistema operacional Linux. Um número impressionante de projetos de software depende
+        do Git para controle de versão, incluindo projetos comerciais e de código-fonte aberto.</p>
+
+    <h2>Como iniciar o GIT</h2>
+    <p>Para iniciar um repositório usamos o comando git init</p>
+
+    <h2>Como adicionar o nome e email de quem esta programando</h2>
+    <p>
+    <ul>
+        <li>Usamos o comando git config --global user.name e o nome de quem esta programando</li>
+        <li>Usamos o comando git
+            config --global user.email mais o email de quem esta programando para demonstrar o email ligado ao GIT HUB
+        </li>
+    </ul>
+    </p>
+
+    <h2>Como linkamos o git local ao Git remoto</h2>
+
+    <p>Usando o comando git remote add origin + endereço do GIT HUB podemos ligar o nosso repositório local ao
+        repositório remoto, fazendo com que o repositório remoto passe a acompanhar tudo o que esta sendo feito. </p>
+
+    <h2>Como adicionar um arquivo ao repositório</h2>
+    <p>
+    <ul>
+        <li>Para adicionarmos apenas um arquivo, usamos o comando git add mais o nome do arquivo</li>
+        <li>Para adicionarmos todos os arquivos de uma pasta, usamos o comando git add . </li>
+
+    </ul> .</p>
+
+    <h2>Comitando um arquivo ao repositório</h2>
+
+    <p>Para comitar um arquivo ao nosso repositório remoto usamos o comando git commit -m"Mensagem que queremos para
+        saber o que estamos fazendo" Fazendo isso criamos um ponto de restauração.</p>
+    <p>Podemos também mudar a mensagem colocado no comando commit usando git commit --amend -m</p>
+
+    <h2>Adicionando arquivo ao repositório remoto.</h2>
+    <p>Usando o comando git push origin mais o repositorio, adicionamos um arquivo ou pasta do repositório local para o
+        repositório remoto</p>
+
+    <h2>Comando Git remote</h2>
+    <p>
+        <ul>
+            <l>Podemos usar o comando git remote --v para verificar qual repositório esta sendo usado no momento</l>
+            <l>Também pode ser usado o comando git remote rm origin para deslinkar o repositório que esta sendo usado</l>
+            <l>Outro comando utilizado é o git remote rename origin, que serve para renomear o nome do repositório que esta sendo utilizado</l>            
+        </ul>
+    </p>
+
+    <h2>Comitando e adicionado ao mesmo tempo</h2>
+    <p>Podemos usar o comando git commit -a -m"mensagem que você quer"</p>
+
+    <h2>Git Log</h2>
+    <ul>
+        <li>Usamos o comando git log para verificar tudo o que foi comitado até esse momento</li>
+        <li>Usando o comando git log --author e o nome que voê quer pesquisar, ele mostra todos os commits feitos por esse programador.</li>
+        <li>Para pesquisarmos em toda a extensão dos comando alguma palavra específica, usamos o comando git log --grep mais a palavra a ser buscada.</li>
+        <li>Outro comando utilizado é o git short log, que nos mostra um log reduzido dos commits.</li>
+    </ul>
+
+
+    
+
+
+
+
+
+
+
+</body>
+
+</html>
