@@ -19,4 +19,8 @@ header{
       }
 
       
+      main{
+          background: url(/Images/Foto_Git.jpg) no-repeat; 
+          background-size: cover;
+          }
 
