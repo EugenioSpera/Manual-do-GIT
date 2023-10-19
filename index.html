@@ -6,15 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual do Git</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+    <header>   
     <h1>Manual do Git</h1>
+</header>
+
+    <h2>Branch</h2>
+    <p>Branch é o estado em que o seu projeto esta, serve para ver como o projeto esta no momento. </p>
+    
+    <h2>Master</h2>
+    <p>Master é a versão final do projeto</p>
 
     <h2>O que é o GIT</h2>
     <p>O Git é um projeto de código aberto maduro e com manutenção ativa desenvolvido em 2005 por Linus Torvalds, o
         famoso criador do kernel do sistema operacional Linux. Um número impressionante de projetos de software depende
         do Git para controle de versão, incluindo projetos comerciais e de código-fonte aberto.</p>
+    
 
     <h2>Como iniciar o GIT</h2>
     <p>Para iniciar um repositório usamos o comando git init</p>
@@ -71,6 +81,31 @@
         <li>Para pesquisarmos em toda a extensão dos comando alguma palavra específica, usamos o comando git log --grep mais a palavra a ser buscada.</li>
         <li>Outro comando utilizado é o git short log, que nos mostra um log reduzido dos commits.</li>
     </ul>
+
+    <h2>Função do Git Pull</h2>
+    <p>Usamos esse comando para pegar o arquivo no repositório remoto e trazer para o repositório local. Ele funciona exatamente inverso ao comando git push</p>
+
+    <h2>Git Clone</h2>
+    <p>O comando Git clone mais o endereço do repositório remoto, serve para trazer o arquivo que esta no repositório remoto para po seu repositório local, quando você ainda não tem nada no seu repositorio local </p>
+
+    <h2>Git Fork</h2>
+    <p>Usamos o comando Git Fork, quandso queremos usar o projeto de outra pessoa que tenha deixado como público, acessamos o GIT HUB dessa pessoa, colamos o endereço do repositório remoto dele para o nosso repositório local</p>
+
+    <h2>Git Reset</h2>
+    <p>
+        <ul>
+            <li>Git Reset Head~1 -Comando para excluir o arquivo do repositorio local. Head~1 é o primeiro commit, Head~10 seria o décimo commit sendo que quanto maior o numero, mais perto do commit inicial. Ele joga o arquivo para o estagio inicial antes de ser Add ou commitado. </li>
+            <li>Git reset Head~1 --soft - Mesmo comando que o anterior, de forma leve. Ele apenas descomita o arquivo.</li>
+            <li>Git reset Head~1 --hard - Mesmo comando que o de cima, porém ele deleta o arquivo do repositorio local.</li>
+        </ul>
+    </p>
+
+    <h2>Git Branch</h2>
+    <p>Mostra quais as versões de desenvolvimento.</p>
+
+    <footer>
+        <p>Desenvolvido por Eugenio Spera</p>
+    </footer>
 
 
     
