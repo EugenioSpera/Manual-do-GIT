@@ -1,16 +1,23 @@
-header{
-    background-color: green;
+body{font-size: 30px;
+    background:url('../Images/Foto_Git.jpg') no-repeat;  
+}
+
+header
+    {background-color: red;
     text-align: center;
     padding: 20px 0;
+    margin: 0%;
+    font-family: sans-serif;
+    
     }
 
     footer{
-        background-color: aquamarine;
+        background-color: red;
         text-align: right;   
     }
 
     h2{
-       color : blue;
+       color : red;
        text-align: center;
       }
 
@@ -20,7 +27,13 @@ header{
 
       
       main{
-          background: url(/Images/Foto_Git.jpg) no-repeat; 
+          background-color: rgba(255, 255, 255, 0.5);
+          padding: 80;
           background-size: cover;
+          display: block;
           }
+
+     p,ul{ 
+         color: #fff
+     } 
 
